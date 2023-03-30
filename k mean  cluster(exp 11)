@@ -1,3 +1,13 @@
+AIM:To implement clustering using K-means clustering Algorithm by using python.
+ALGORITHM:
+1.select the number k to decide the no.of cluster.
+2.select random k points or centriods.
+3.Assign each from the data point to their cloest centroid, which will from the predefine k clusters.
+4.Calculate the varience and place a new centriod of each other.
+5.Repeat the first 3rd to redesign the datapoint.
+6.The requirements occure else go to finish
+7.Stop the program
+PROGRAM:
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -23,3 +33,4 @@ plt.title('Clusters of Customers')
 plt.xlabel('Annual Income(k$)')
 plt.ylabel('Spending Score(1-100)')
 plt.show()
+RESULT:Implementing clustering using k-means clustering algorithm has been implemented successfully.
