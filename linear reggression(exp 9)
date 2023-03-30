@@ -31,11 +31,10 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=1/2,shuffle=
 b=LinearRegressor(x_train,y_train)
 y_pred=[b[0]+b[1]*val for val in x_test]
 r2_score(y_test,y_pred)
+plt.plot(x_test,y_pred)
+plt.scatter(x_test, y_test,c="k")
 Output:
 Slope [0.94194449]
 Intercept 0.374186775238746
 MSE 0.7364342954183716
 Result:The program is executed and the output is verified.
-
-plt.plot(x_test,y_pred)
-plt.scatter(x_test, y_test,c="k")
