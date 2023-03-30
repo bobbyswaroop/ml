@@ -1,20 +1,24 @@
+AIM: To write a python program to implement data processing for building good training sets of data.
+Algorithm: 
+1.Start the program.
+2.Import Libraries and dataset.
+3.Find the description of data in the data frame count the number of rows that are having no values from each column being describe().
+4.Print the no.of columns, columns lables,column, data types from the data frame using info()
+5.Replace the value 0 with NAN with replace()
+6.Input the missing data with mean values.
+7.Assign the values to x excepting the last column and assign values to y using loc[]
+8.Split the dataset into training, testing(80:20).
+Program:
 import pandas as pd
-
 df = pd.read_csv("/Heart.csv")
 df
-
 df.describe()
-
 df.info()
-
 df.replace(0,'NAN') # Remove the rows with the missing values
 df.dropna()
-
 df.fillna(df.mean())
-
 x=df.iloc[:,0:14].values
 x
-
 y=df.iloc[:,14].values
 y
 from sklearn.model_selection import train_test_split
@@ -22,3 +26,7 @@ x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.2, ran
 dom_state=0)
 print (x_train.shape)
 print (x_test.shape)
+Output:
+(242, 14)
+(61, 14)
+Result: The program verified and executed successfully.
