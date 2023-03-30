@@ -25,3 +25,10 @@ elif select == "-":
 print(num1, "/", num2, "=", num1/num2)
 else:
 print ("Invalid input")
+Output:
+Operation: +, -, *. /
+Select Operations: *
+Enter First Number: 10
+Enter Second Number: 2
+10.0*2.0=20.0 
+Result:Simple calculator program by using python is successfully generated.
