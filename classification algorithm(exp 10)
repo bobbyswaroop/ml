@@ -1,3 +1,14 @@
+AIM:Write program to implement classification Algorithm by using python.
+Algorithm:
+1.Import the libraries.
+2.fetch data
+3.Determine the target variables
+4.creation of predictors variables
+5.test and train dataset split
+6.create the machine learning classification model using the train dataset
+7.prediction
+8.plotting classification data in matplotlib.
+Program:
 import pandas as pd
 data=pd.read_csv("Iris.csv")
 X =data.iloc[:,[1,2,3,4]].values
@@ -19,3 +30,8 @@ sn.heatmap(cm,annot=True)
 plt.xlabel('Predicted value')
 plt.ylabel('Actual value')
 plt.show()
+Output:
+[[11 0 0]
+ [0 12 1]
+ [0 0 6]]
+Result:To implement classification algorithm by using python has been executed successfully and verified output.
