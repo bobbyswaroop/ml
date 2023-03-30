@@ -1,3 +1,13 @@
+Aim: To create a program for manipulating the twitter dataset.
+Algorithm:
+1.Import the required libraries (pandas, numpy).
+2.Load the datset using pandas “read.csv” function A store it in a variable (ds) “re”.
+3.Get summary of the data using “data” , and remove the pattern in the dataset by declaring or using the det “remove pattern”.
+4.Replace the new “data” in the dataset available using [new]
+5.Replace the text by using str replace () and print the data.
+6.Split the data and print to Henized tweet using “to henized” tweet head() function.
+7.Using import porter stemmer remove the common & inflexional endings from words in English and print the tokenized tweet.
+Program:
 import pandas as pd
 import numpy as np
 import re
@@ -21,3 +31,6 @@ from nltk.stem import PorterStemmer
 stemmer = PorterStemmer()
 tokenized_tweet = tokenized_tweet.apply(lambda x:[stemmer.stem(i) for i in ])
 print (tokenized_tweet.head())
+Output:
+ 
+Result:The program to manipulate the twitter dataset using python is manipulated successfully and verified.
