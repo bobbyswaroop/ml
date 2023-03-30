@@ -1,3 +1,12 @@
+AIM: Print the String "Welcome". Matrix size must be N X M. ( N is an odd natural number, and M is 3 times N.). The design should have 'WELCOME' written in the center. The design pattern should only use |, .and - characters.
+Algorithm:
+1.Start the program.
+2.Size of math must be N*M (W is an odd natural number and M is 3time N)
+3.Design pattern should only use ‘1’, ’0’, ’-‘ characters.
+4.Get the N amd M values from the user.
+5.Print the output.
+6.Stop the proram.
+Program:
 import math
 N, M = map(int, input("Enter N and M: ").split())
 for i in range(0,math.floor(N/2)):
@@ -7,3 +16,5 @@ print ('WELCOME'.center(M,'-'))
 for i in reversed(range(0,math.floor(N/2))):
  s = '.|.'*i
  print (s.rjust(math.floor((M-2)/2),'- ')+'.|.'+('.|.'*i).ljust(math.floor((M-2)/2),'-'))
+Output:9 27
+Result: the above program is executed and verified successfully.
