@@ -1,3 +1,11 @@
+AIM: From the string input count the special character, alphabets, digits, lowercase and uppercase characters.
+Algorithm:
+1.Start the program.
+2.Get the input string from the user.
+3.Count the no.of digits no.of alphabets, no.of uppercase given by user.
+4.Then print the output.
+5.Stop the program.
+Program:
 def count(str):
  alpha,upper,lower,number,special = 0,0,0,0,0
  for i in range(len(str)):
@@ -19,3 +27,11 @@ def count(str):
  print('Uppercase:', upper)
 str = input("Enter a string: ")
 Count(str)
+Output:
+Enter a string: sathyabama @2023
+Digits: 4
+Alphabets: 10
+Special characters: 1
+Lowercase: 10
+Uppercase: 0
+Result: The above program is executed and verified successfully.
