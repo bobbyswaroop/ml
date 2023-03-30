@@ -1,4 +1,12 @@
-print("Operation: +, -, *, /")
+AIM: To generate a simple program for simple calculator without using library function.
+Algorithm:
+1.Start the program.
+2.Get input from the user(Choice corresponding to various operations like addition,multiplication,division).
+3.Get two integer inputs from the user.
+4.Perform the operations based on the user’s choice.
+5.Print the output.
+6.End the program.
+Program:print("Operation: +, -, *, /")
 select = input("Select operations: ")
 
 num1 = float(input("Enter first number: "))
