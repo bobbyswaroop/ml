@@ -1,3 +1,17 @@
+AIM: To generate a program to find the Fibonacci Series.
+Algorithm:
+1.Start the program.
+2.Input the number of values we want to generate the Fabonacci series.
+3.Initialize the count=0, n-1=0 & n-2=1.
+4.If the n-terms <=0
+5.Print “error” as it is not a valid number for series.
+6.If n terms=1, it will print n-1 values.
+7.While count <n-terms.
+8.Print(n-1).
+9.nth=n-1+n-2
+10.We will update the variable, n-1, n-2, n-3=nth and soon, up to the required term.
+11.Stop the Program.
+Program:
 nterms = int(input("How many terms? "))
 
 n1, n2 = 0, 1
@@ -17,3 +31,12 @@ else:
  n1 = n2
  n2 = nth
  count += 1
+Output:
+How many terms? 5
+Fibonacci sequence:
+0
+1
+1
+2
+3
+Result:To generate a program to find the fibonacci series is implemented successfully.
