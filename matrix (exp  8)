@@ -1,3 +1,15 @@
+Aim:To create a program for evaluating the result of machine learning.
+Algorithm:
+1.Read actual values vs predicted values
+2.Compute the following:
+3. Compute the Confusion Matrix
+4. Compute the Accuracy
+5. Compute the Specificity
+6. Compute the Sensitivity
+7. Compute the Precision 
+8. Compute the Recall
+9. Compute the Misclassification Error
+Program:
 y=['0','1','0','1','1','1','0','1','0','1','0','0','0','1','1','1','0','1','1','0']
 y_pred = ['0','0','0','0','1','0','1','1','1','1','0','0','0','0','0','1','0','1','1','0']
 print (y)
@@ -28,3 +40,14 @@ SP = TN/ (TN+FP)
 print ("SPECIFICITY : ", SP)
 MCE = 1-ACC
 print ("MISCLASSIFICATION ERROR : ", MCE)
+Output:
+['0', '1', '0', '1', '1', '1', '0', '1', '0', '1', '0', '0', '0', '1', '1', '1', '0', '1', '1', '0']
+['0', '0', '0', '0', '1', '0', '1', '1', '1', '1', '0', '0', '0', '0', '0', '1', '0', '1', '1', '0']
+Confusion Matrix :  [6, 7, 5, 2]
+ACCURACY :  0.65
+PRECISION :  0.5454545454545454
+RECALL :  0.75
+SENSITIVITY :  0.75
+SPECIFICITY :  0.5833333333333334
+MISCLASSIFICATION ERROR :  0.35
+Result:The program to evaluating the result of machine learning is successfully evaluated and verified.
