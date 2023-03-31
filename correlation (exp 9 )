@@ -62,3 +62,6 @@ print ("Slope", model.coef_)
 print ("Intercept", model.intercept_)
 print ("MSE", Mse)
 Output:
+Slope [0.94194449]
+Intercept 0.374186775238746
+MSE 0.7364342954183716
