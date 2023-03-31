@@ -11,7 +11,7 @@ Program:
 import pandas as pd
 import numpy as np
 import re
-data = pd.read_csv("/content/tweets1.csv")
+data = pd.read_csv("tweets1.csv")
 data
 def remove_pattern(input_txt, pattern):
  r = re.findall(pattern,input_txt)
@@ -29,7 +29,7 @@ tokenized_tweet = data['new'].apply (lambda x:x.split())
 print (tokenized_tweet.head())
 from nltk.stem import PorterStemmer
 stemmer = PorterStemmer()
-tokenized_tweet = tokenized_tweet.apply(lambda x:[stemmer.stem(i) for i in ])
+tokenized_tweet = tokenized_tweet.apply(lambda x:[stemmer.stem(i) for i in r])
 print (tokenized_tweet.head())
 Output:
  
