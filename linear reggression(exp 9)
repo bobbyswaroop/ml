@@ -33,6 +33,8 @@ y_pred=[b[0]+b[1]*val for val in x_test]
 r2_score(y_test,y_pred)
 plt.plot(x_test,y_pred)
 plt.scatter(x_test, y_test,c="k")
+print( "RMSE: ",np.sqrt( mean_squared_error( y_test, y_pred ) ))
+print( "R-squared: ",r2_score( y_test, y_pred ) )
 Output:
 
 Result:The program is executed and the output is verified.
